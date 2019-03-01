@@ -21,6 +21,8 @@ namespace tanka.graphql.type
             }
         }
 
+        public IEnumerable<KeyValuePair<string, Argument>> Arguments => _arguments;
+
         public string Name => Type.Name;
 
         public Argument GetArgument(string name)
